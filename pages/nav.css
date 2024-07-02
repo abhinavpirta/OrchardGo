@@ -40,7 +40,7 @@
         font-size: 0.74vw;
         font-weight: 400;
         display: inline-block;
-        transform: translateY(25px);
+        /* transform: translateY(25px); */
     }
     #nav-part2 h5{
         margin-bottom: 1vw;
