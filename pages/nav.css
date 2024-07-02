@@ -17,7 +17,7 @@
         width: 100%;
         padding: 2vw 10.4vw;
         justify-content: space-between;
-        height: 12vh;
+        height: 15vh;
         z-index: 10;
         /* margin-bottom: 1px solid green; */
         
@@ -113,7 +113,7 @@
     }
     #nav-bottom{
         width: 79%;
-        height: 0vh;
+        height: 20vh;
         position: absolute;
         background-color: #111;
         /* bottom: 0%; */
