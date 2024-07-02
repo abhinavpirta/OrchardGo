@@ -114,7 +114,7 @@ nav button svg{
 }
 #nav-bottom{
     width: 79%;
-    height: 15vh;
+    height: 0vh;
     position: absolute;
     background-color:#010101;
     /* bottom: 0%; */
