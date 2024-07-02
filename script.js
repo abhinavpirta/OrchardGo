@@ -31,6 +31,10 @@ gsap.from("#main>#page1>h1",{
 //     stagger :-0.2
 
 // })
+
+
+
+
 gsap.from("#main>#page1>h2",{
     y:70,
     duration:2.5,
@@ -40,13 +44,53 @@ gsap.from("#main>#page1>h2",{
 
 })
 
+
+
+
+function locomotiveAnimation() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector("#main"),
+        smooth: true,
+
+        // for tablet smooth
+        tablet: { smooth: true },
+
+        // for mobile
+        smartphone: { smooth: true }
+    });
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy("#main", {
+        scrollTop(value) {
+            return arguments.length
+                ? locoScroll.scrollTo(value, 0, 0)
+                : locoScroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+            return {
+                top: 0,
+                left: 0,
+                width: window.innerWidth,
+                height: window.innerHeight
+            };
+        }
+    });
+
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+    ScrollTrigger.refresh();
+}
+locomotiveAnimation()
+
 function navAnimation(){
     var nav = document.querySelector("nav")
 nav.addEventListener("mouseenter",function(){
     let tl = gsap.timeline()
     tl.to("#nav-bottom",{
         height: "20vh",
-        duration:0.4,
+        duration:0.5,
     })
     tl.to("nav h5",{
         display:"block",
@@ -57,7 +101,7 @@ nav.addEventListener("mouseenter",function(){
         y:0,
         // duration:0.3,
         stagger:{
-            amount:0.1
+            amount:0.5
         }
     })
 
@@ -72,7 +116,7 @@ nav.addEventListener("mouseleave",function(){
         y:25,
         // duration:0.3,
         stagger:{
-            amount:0.1
+            amount:0.2
         }
     })
     tl.to("#nav-part2 h5",{

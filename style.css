@@ -12,7 +12,7 @@ width: 100%;
 nav{
     position: fixed;
     display: flex;
-    background-color: #111;
+    background-color: #010101;
     align-items: flex-start;
     width: 100%;
     padding: 2vw 10.4vw;
@@ -56,7 +56,7 @@ nav>h1{
 nav:hover #nav-bottom{
     height: 150%;
     bottom: -150%;
-    background-color: #111;
+    background-color: #010101;
 }
 #nav-bottom{
     /* background-color: red; */
@@ -95,7 +95,7 @@ nav:hover #nav-bottom{
     
 }
 nav button{
-    background-color: #0DA34E;
+    background-color: #010101;
     display: flex;
     align-items: center;
     padding: 12px 12px;
@@ -105,16 +105,15 @@ nav button{
     font-weight: 700;
     text-transform: uppercase;
 }
-nav button svg{
-    height: 0.85vw;
-    margin-left: 1.6vw;
-
+nav button h1{
+    color:#010101 ;
 }
+
 #nav-bottom{
     width: 79%;
     height: 0vh;
     position: absolute;
-    background-color: #111;
+    background-color: #010101;
     /* bottom: 0%; */
     top: 100%;
     z-index: 9;
@@ -268,7 +267,7 @@ nav button svg{
 }
 #page3{
     height: 50vh;
-    width: 100%;
+    min-width: 100vw;
     background-color: #010101;
     position: relative;
     padding: 0vw 10.5vw;
