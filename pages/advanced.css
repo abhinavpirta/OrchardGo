@@ -14,6 +14,7 @@ width: 100%;
   background-color: #111;
   position: relative;
   padding: 5vh 10.5vw;
+  padding-right: 10vw;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -81,7 +82,7 @@ width: 100%;
 
 }
 .page5-elem p{
-  width: 55%;
+  width: 50%;
   font-size: 0.8vw;
   position: relative;
   z-index: 8;
