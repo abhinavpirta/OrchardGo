@@ -61,6 +61,7 @@ width: 100%;
   display: flex;
   margin-top: 4vh;
   margin-bottom: 4vh;
+  margin-right: 3vw;
 }
 #page5-content #flex h4{
   border-radius: 50px;
@@ -68,6 +69,7 @@ width: 100%;
   padding: 10px 20px;
   font-weight: 400;
   font-size: 0.8vw;
+  
 }
 .page5-elem{
   display: flex;
