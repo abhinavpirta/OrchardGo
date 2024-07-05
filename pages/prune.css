@@ -108,7 +108,7 @@ width: 100%;
 
 
 #page5-right{
-  width: 100%;
+  width: 85%;
   
 }
 #page5-right>p{
@@ -157,7 +157,7 @@ width: 100%;
 }
 .page5-elem{
   display: flex;
-  width: 80%;
+  
   align-items: flex-start;
   justify-content: space-between;
   /* background-color: red; */
